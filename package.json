@@ -1,0 +1,33 @@
+{
+  "name": "aabbdd",
+  "version": "0.1.0",
+  "description": "A class for convenient, method rich, Axis Aligned Bounding Boxes in 2D.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/limeandcoconut/aabbdd.git"
+  },
+  "keywords": [
+    "aabb",
+    "2d",
+    "bounding",
+    "box",
+    "axis",
+    "aligned",
+    "rectangle",
+    "collision",
+    "geometry",
+    "square"
+  ],
+  "author": "Jacob Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limeandcoconut/aabbdd/issues"
+  },
+  "homepage": "https://github.com/limeandcoconut/aabbdd#readme"
+}
