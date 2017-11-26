@@ -27,6 +27,7 @@ Cheers!
 - [ ] Docs Site
 - [ ] Tests
 - [ ] Usage stats
+- [ ] Check todos in index
 
 ## Usage Stats
 Coming soon.
