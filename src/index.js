@@ -53,6 +53,11 @@ class AABBDD {
          * @alias combine
          */
         this.enclose = this.combine
+
+        /**
+         * @alias containsAABBDD
+         */
+        this.containsAABBDD = this.containsAABB
     }
 
     /**
@@ -102,7 +107,7 @@ class AABBDD {
             distance = Vector2D.dotProduct(vertex, direction)
             if (distance > furthestDistance) {
                 furthestDistance = distance
-                furthestVertex = vertex
+                furthestVertex = new Vector2D(vertex)
             }
 
             i++
@@ -125,7 +130,7 @@ class AABBDD {
     assertVectorLike(x, y) {
         if (typeof x === 'object') {
             if (Array.isArray(x)) {
-                [x, y] = x
+                [x = 0, y = 0] = x
             } else {
                 ({x = 0, y = 0} = x)
             }
@@ -332,6 +337,7 @@ class AABBDD {
     /**
      * Test wether completely contains another.
      * @method containsAABB
+     * @alias containsAABBDD
      * @param   {AABBDD}    other   An AABBDD to test.
      * @throws  {TypeError}         Throws if the argument is not an instance of AABBDD.
      * @return  {AABBDD}            Returns true if this box contains the other.
